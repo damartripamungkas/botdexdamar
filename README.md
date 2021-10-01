@@ -2,7 +2,7 @@
 
 this is a combination of sniper bot, frontrun bot, watch telegram
 
-pancakeswap and Uniswap trading bots with FRONTRUNNING, stop-losses, bulk buys, special gas and more.
+pancakeswap and Uniswap trading bots with FRONTRUNNING and SNIPERBOT.
 
 # addition
 If your funds are low you can buy with custom features and trim some features
