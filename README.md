@@ -61,7 +61,7 @@ some screenshots of this bot
 # price
 ```
 swap + swap buy faster + swap bulk direct = 1.6 BNB
-swap frontruning = 5 BNB
+swap frontruning = 6 BNB
 watch telegram = 0.2 BNB
 ```
 
