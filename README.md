@@ -1,8 +1,8 @@
-# pancakeswap and uniswap bot
+# pancakeswap bot
 
 this is a combination of sniper bot, frontrun bot, watch telegram
 
-pancakeswap and Uniswap trading bots with FRONTRUNNING, SNIPERBOT and WATCH TELEGRAM.
+pancakeswap trading bots with FRONTRUNNING, SNIPERBOT and WATCH TELEGRAM.
 
 # addition
 If your funds are low you can buy with custom features and trim some features
