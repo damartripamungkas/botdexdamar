@@ -1,5 +1,6 @@
 # pancakeswap and uniswap bot
 
+this is a combination of sniper bot, frontrun bot, watch telegram
 pancakeswap and Uniswap trading bots with FRONTRUNNING, stop-losses, bulk buys, special gas and more.
 
 # addition
@@ -60,7 +61,7 @@ some screenshots of this bot
 
 # price
 ```
-swap + swap buy faster + swap bulk direct = 1.6 BNB
+swap + swap buy faster + swap bulk direct = 1.5 BNB
 swap frontruning = 6 BNB
 watch telegram = 0.2 BNB
 ```
