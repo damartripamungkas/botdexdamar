@@ -1,6 +1,7 @@
 # pancakeswap and uniswap bot
 
 this is a combination of sniper bot, frontrun bot, watch telegram
+
 pancakeswap and Uniswap trading bots with FRONTRUNNING, stop-losses, bulk buys, special gas and more.
 
 # addition
