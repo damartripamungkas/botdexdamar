@@ -63,14 +63,18 @@ module.exports = {
         },
         swapFrontrun: {
             /* will try to make swap token in the same block addLiquidity or other */
+            key: "12345-12345-12345", // for detect addLiqudity, dont change
             amountSwap: "0.1", // jumlah untuk membeli token. format input dalam ANGKA.
-            gweiSwap: "20", // gwei swap faster. format INPUT adalah ANGKA. [rekomend use 20++]
             gasLimitSwap: "3000000", // gas limit swap faster. format INPUT adalah ANGKA. [recomend use 5000000]
             swapTokenWithSupportFee: "enable", // jika token yang anda beli memiliki tax fee maka aktifkan fitur ini dengan set ke "enable" jika tida support maka set ke "disable". format INPUT adalah enable, disable
             targetBulk: "1", // target jumlah swap bulk untuk melakukan swap secara cepat lebih dari 1x
             optionSwap: {
-                addCustomHash: "--", // foramt input none dan hash
-                useCustomMethod: "enable", // format input enable dan disable
+                dontFilter: [
+                    "transfer",
+                    "approve",
+                    "claim"
+                ],
+                useDontFilter: "disable", // format input enable dan disable
             }
         },
         token: {
