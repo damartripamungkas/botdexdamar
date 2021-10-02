@@ -70,9 +70,7 @@ module.exports = {
             targetBulk: "1", // target jumlah swap bulk untuk melakukan swap secara cepat lebih dari 1x
             optionSwap: {
                 dontFilter: [
-                    "transfer",
-                    "approve",
-                    "claim"
+                    "parentHash",
                 ],
                 useDontFilter: "disable", // format input enable dan disable
             }
