@@ -60,10 +60,13 @@ some screenshots of this bot
 8. (presale) buy token in presale dxsale\
 ![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/presale.jpg?raw=true)\
 
+# system
+free update bot for problem or new feature
+
 # price
 ```
 swap + swap buy faster + swap bulk direct = 1 BNB
-swap frontruning = 6 BNB
+swap frontruning = 4 BNB
 watch telegram = 0.2 BNB
 ```
 
