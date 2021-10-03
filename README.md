@@ -67,7 +67,7 @@ free update bot for problem or new feature
 ```
 swap + swap buy faster + swap bulk direct = 1 BNB
 swap frontruning = 4 BNB
-watch telegram = 0.2 BNB
+watch telegram = 0.07 BNB
 ```
 
 # contactus
