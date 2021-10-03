@@ -37,36 +37,38 @@ for more details, please check the config/config.js file
 some screenshots of this bot
 
 1. home\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/home.jpg?raw=true)\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/home.jpg?raw=true)
 
 2. menu swap\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/menuswap.jpg?raw=true)\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/menuswap.jpg?raw=true)
 
-3. (swap) token fraud prevention, TRANSFER_FROM_FAILED\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swap.jpg?raw=true)\
+3. (swap)(sniper) token fraud prevention, TRANSFER_FROM_FAILED\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swap.jpg?raw=true)
 
-4. (swapbuyfaster) buy token with faster and bulk but limited feature\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfaster.jpg?raw=true)\
+4. (swapbuyfaster)(sniper) buy token with faster and bulk but limited feature\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfaster.jpg?raw=true)
 
-5. (swapbulkdirect) buy token with bruteforce before addliqudity or other\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapbulkdirect.jpg?raw=true)\
+5. (swapbulkdirect)(sniper) buy token with bruteforce before addliqudity or other\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapbulkdirect.jpg?raw=true)
 
-6. (swapbuyfrontrun) buy token with same block add liquidity or other\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfrontrun.jpg?raw=true)\
+6. (swapbuyfrontrun)(frontrun) buy token with same block add liquidity or other\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfrontrun.jpg?raw=true)
 
-7. (swap + watch telegram) buy token with address in telegram channel or grub\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapwatchtelegram.jpg?raw=true)\
+7. (swap + watch telegram)(sniper) buy token with address in telegram channel or grub\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapwatchtelegram.jpg?raw=true)
 
-8. (presale) buy token in presale dxsale\
+8. (presale)(sniper) buy token in presale dxsale\
 ![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/presale.jpg?raw=true)\
+
 
 # system
 free update bot for problem or new feature
 
 # price
 ```
-swap + swap buy faster + swap bulk direct = 1 BNB
-swap frontruning = 4 BNB
+bot sniper = 1 BNB
+bot frontrun = 4 BNB
+bot sniper + bot frontrun = 3.75 BNB
 watch telegram = 0.07 BNB
 ```
 
