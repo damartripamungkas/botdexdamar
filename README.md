@@ -53,11 +53,17 @@ some screenshots of this bot
 ![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapwatchtelegram.jpg?raw=true)
 
 8. (presale)(sniper) buy token in presale dxsale\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/presale.jpg?raw=true)\
+![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/presale.jpg?raw=true)
 
-
-# system
-free update bot for problem or new feature
+# question
+1. is there a monthly fee? no, you only pay once.\
+2. does it need a private node to run it? no, our bots can be run using private node or free node.\
+3. is there an update or repair fee? no, for updates and repairs we provide for free.\
+4. how to buy tokens fast? suggest using frontrun bot to buy tokens fast.\
+5. how to get this bot to buy tokens quickly? in addition to using a frontrun bot I suggest using a private node like quicknode.\
+6. does it need a vps to run it? no, you can run it on a local computer but to get good speed I suggest using a vps or rdp.\
+7. can it be run using android? yes, you can run it using an application like termux.\
+8. dex what support in this bot? pancakeswap, uniswap, apeswap, and others.\
 
 # price
 ```
