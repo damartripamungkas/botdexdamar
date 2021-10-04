@@ -32,28 +32,28 @@ for more details, please check the config/config.js file
 some screenshots of this bot
 
 1. home\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/home.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.jpg?raw=true)
 
 2. menu swap\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/menuswap.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/menuswap.jpg?raw=true)
 
 3. (swap)(sniper) token fraud prevention, TRANSFER_FROM_FAILED\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swap.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swap.jpg?raw=true)
 
 4. (swapbuyfaster)(sniper) buy token with faster and bulk but limited feature\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfaster.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfaster.jpg?raw=true)
 
 5. (swapbulkdirect)(sniper) buy token with bruteforce before addliqudity or other\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapbulkdirect.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapbulkdirect.jpg?raw=true)
 
 6. (swapbuyfrontrun)(frontrun) buy token with same block add liquidity or other\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapfrontrun.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
 
 7. (swap + watch telegram)(sniper) buy token with address in telegram channel or grub\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/swapwatchtelegram.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapwatchtelegram.jpg?raw=true)
 
 8. (presale)(sniper) buy token in presale dxsale\
-![alt text](https://github.com/damartripamungkas/pancakeswap-bot/blob/main/images/presale.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
 # question
 1. is there a monthly fee? no, you only pay once.
