@@ -4,12 +4,12 @@ module.exports = {
     useUrl: "wss", // use network for above, wss or http
     mainUrl: {
         urlHttp: "https://bsc-dataseed4.binance.org/", // binance smart chain bsc http
-        urlWebsocket: "wss://CUSTOM.NODE:443", // binance smart chain bsc websocket
+        urlWebsocket: "wss://CUSTOM.NODE", // binance smart chain bsc websocket
         use: "wss", // select network for main url, wss or http
     },
     myWallet: {
-        mnemonic: "computer mouse laptop keyboard usb cable lamp fan screen", // your wallet mnemonic pharse
-        address: "0x121213u193uc1u9182y498y232" // your wallet address
+        mnemonic: "laptop internet symbol color table tv android card", // your wallet mnemonic pharse
+        address: "0x1234567890987654321" // your wallet address
     },
     allAddress: {
         WBNB: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", // ubah address ini jika anda ingin membeli token selain menggunakan WBNB
@@ -62,17 +62,21 @@ module.exports = {
             targetBulk: "3", // target jumlah swap bulk untuk melakukan swap secara cepat lebih dari 1x
         },
         swapFrontrun: {
-            /* will try to make swap token in the same block addLiquidity or other */
-            key: "12345-12345-12345", // for detect addLiqudity, dont change
-            amountSwap: "0.1", // jumlah untuk membeli token. format input dalam ANGKA.
+            /* will to make swap token in the same block addLiquidity or other */
+            key: "---", // for detect addLiqudity, dont change
+            amountSwap: "0.03", // jumlah untuk membeli token. format input adalah ANGKA.
             gasLimitSwap: "3000000", // gas limit swap faster. format INPUT adalah ANGKA. [recomend use 5000000]
             swapTokenWithSupportFee: "enable", // jika token yang anda beli memiliki tax fee maka aktifkan fitur ini dengan set ke "enable" jika tida support maka set ke "disable". format INPUT adalah enable, disable
             targetBulk: "1", // target jumlah swap bulk untuk melakukan swap secara cepat lebih dari 1x
+            networkId: "56", // for binance smart chain = 56
             optionSwap: {
                 dontFilter: [
-                    "parentHash",
+                    "transferFrom",
+                    "transfer",
+                    "approve",
+                    "claim"
                 ],
-                useDontFilter: "disable", // format input enable dan disable
+                useDontFilter: "enable", // format input enable dan disable
             }
         },
         token: {
@@ -80,9 +84,9 @@ module.exports = {
             symbol: "TOKEN_1", // symbol token.
         },
         presale: {
-            amountPresale: `0.1`, // jumlah BNB(BSC) untuk membeli token presale format input adalah ANGKA
-            gweiPresale: `100`, // gwei presale. format INPUT adalah ANGKA. [rekomend use 200++]
-            gasLimitPresale: `21000`, // gas limit presale. format INPUT adalah ANGKA. [rekomend use 500000++]
+            amountPresale: "0.1", // jumlah BNB(BSC) untuk membeli token presale format input adalah ANGKA
+            gweiPresale: "100", // gwei presale. format INPUT adalah ANGKA. [rekomend use 200++]
+            gasLimitPresale: "21000", // gas limit presale. format INPUT adalah ANGKA. [rekomend use 500000++]
         }
     },
 };
