@@ -70,7 +70,7 @@ some screenshots of this bot
 # price
 ```
 bot sniper = $400 BUSD
-bot frontrun = $1600 BUSD
+bot frontrun = $1500 BUSD
 bot sniper + bot frontrun = $1900 BUSD
 watch telegram = $20 BUSD
 
