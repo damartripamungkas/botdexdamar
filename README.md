@@ -84,8 +84,8 @@ if you want to pay using ETH and make peer to peer transactions safely you can b
 1. botdexdamar(full)\
 comingsoon
 2. botdexdamar(only-frontrun)\
-https://enzypt.io/PXrzQeL6TzT3w6ug1875SceLRrdb7Dr7/QMEaUachJCyeNmiqa0gJjVJ6ggh_ZldGJAuJI8EvnJg
-3. botdexdamar(only-sniper)\
+comingsoon
+4. botdexdamar(only-sniper)\
 comingsoon
 
 but if you want to negotiate the price and buy using other tokens you can contact us below
