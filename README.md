@@ -1,12 +1,7 @@
-# pancakeswap bot
-
+# BOTDEXDAMAR
 this is a combination of sniper bot, frontrun bot, watch telegram
 
 pancakeswap trading bots with FRONTRUNNING, SNIPERBOT and WATCH TELEGRAM.
-
-# addition
-If your funds are low you can buy with custom features and trim some features
-You can negotiate the price with us, contact us immediately
 
 # features
 for more details, please check the config/config.js file
@@ -66,10 +61,13 @@ free update bot for problem or new feature
 
 # price
 ```
-bot sniper = 1 BNB
-bot frontrun = 4 BNB
-bot sniper + bot frontrun = 3.75 BNB
-watch telegram = 0.07 BNB
+bot sniper = $400 BUSD
+bot frontrun = $1600 BUSD
+bot sniper + bot frontrun = $1900 BUSD
+watch telegram = $20 BUSD
+
+If your funds are low you can buy with custom features and trim some features
+You can negotiate the price with us, contact us immediately
 ```
 
 # contactus
