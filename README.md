@@ -78,6 +78,18 @@ If your funds are low you can buy with custom features and trim some features
 You can negotiate the price with us, contact us immediately
 ```
 
+# how to buy
+if you want to pay using ETH and make peer to peer transactions safely you can buy it via the following link
+
+1. botdexdamar(full)\
+comingsoon
+2. botdexdamar(only-frontrun)\
+https://enzypt.io/PXrzQeL6TzT3w6ug1875SceLRrdb7Dr7/QMEaUachJCyeNmiqa0gJjVJ6ggh_ZldGJAuJI8EvnJg
+3. botdexdamar(only-sniper)\
+comingsoon
+
+but if you want to negotiate the price and buy using other tokens you can contact us below
+
 # contactus
 ```
 email: damartripamungkas@gmail.com
