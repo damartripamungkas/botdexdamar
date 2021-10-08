@@ -58,9 +58,9 @@ doesn't need special private node like GETH you just need to set up websocket no
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
 - below are some examples of screenshots using the frontrun bot using node websocket free
 - hash transaction Pair
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
 - hash transaction buy token
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
 
 # question
 1. is there a monthly fee? no, you only pay once.
