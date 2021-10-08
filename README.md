@@ -53,7 +53,8 @@ some screenshots of this bot home
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
 # bot frontrun
-1. (swapbuyfrontrun) buy token with same blockNumber addLiquidity or other\
+1. (swapbuyfrontrun) buy token with same blockNumber addLiquidity or other. 
+doesn't need special private node like GETH you just need to set up websocket node, and you can get it for free or paid 100% working\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
 
 # question
