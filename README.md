@@ -61,6 +61,7 @@ doesn't need special private node like GETH you just need to set up websocket no
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
 - hash transaction buy token
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
+- watch my video example : https://youtu.be/FC6_BASNzvg
 
 # question
 1. is there a monthly fee? no, you only pay once.
