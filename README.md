@@ -56,6 +56,11 @@ some screenshots of this bot home
 1. (swapbuyfrontrun) buy token with same blockNumber addLiquidity or other. 
 doesn't need special private node like GETH you just need to set up websocket node, and you can get it for free or paid 100% working\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
+- below are some examples of screenshots using the frontrun bot using node websocket free
+- hash transaction Pair
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.jpg?raw=true)
+- hash transaction buy token
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.jpg?raw=true)
 
 # question
 1. is there a monthly fee? no, you only pay once.
@@ -79,18 +84,6 @@ watch telegram = $20 BUSD
 If your funds are low you can buy with custom features and trim some features
 You can negotiate the price with us, contact us immediately
 ```
-
-# how to buy
-if you want to pay using ETH and make peer to peer transactions safely you can buy it via the following link
-
-1. botdexdamar(full)\
-comingsoon
-2. botdexdamar(only-frontrun)\
-comingsoon
-4. botdexdamar(only-sniper)\
-comingsoon
-
-but if you want to negotiate the price and buy using other tokens you can contact us below
 
 # contactus
 ```
