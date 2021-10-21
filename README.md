@@ -77,10 +77,10 @@ doesn't need special private node like GETH you just need to set up websocket no
 
 # price
 ```
-bot sniper = $200 BUSD
-bot frontrun = $1000 BUSD
-bot sniper + bot frontrun = $1000 BUSD
-watch telegram = $20 BUSD
+bot sniper = $100 BUSD
+bot frontrun = ??? BUSD
+bot sniper + bot frontrun = ??? BUSD
+watch telegram = $15 BUSD
 
 If your funds are low you can buy with custom features and trim some features
 You can negotiate the price with us, contact us immediately
