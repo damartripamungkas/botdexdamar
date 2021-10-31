@@ -3,8 +3,8 @@ combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
 botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
 
-# CHANGELOG TO V8.0.0
-1. fix bug and tune up performance\
+# changelog to V8.0.0
+1. fix bug and tune up performance
 2. add botexploit and add awesome features in botexploit
 
 # features sniper
