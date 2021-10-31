@@ -85,7 +85,7 @@ a little information, if you don't have a special node blockchain private as nee
 
 # price
 ```
-bot sniper + bot frontrun = $1100 BUSD
+bot sniper + bot frontrun = $2100 BUSD
 
 If your funds are low you can buy with custom features and trim some features
 You can negotiate the price with us, contact us immediately
