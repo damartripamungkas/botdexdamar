@@ -64,6 +64,9 @@ a little information, if you don't have a special node blockchain private as nee
 2. (firstlaunchbuy) buy token with same blockNumber method addLiquidity or other method token. 
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitFirstlaunchbuy.png?raw=true)
 
+3. (sandwich) buy token before target do success buy and after that sell all the tokens.
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich.png?raw=true)
+
 - below are some examples of screenshots using firstlaunchbuy with node blockchain websocket free version
 - hash transaction Target
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
