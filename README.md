@@ -1,6 +1,6 @@
 # BOTDEXDAMAR
-combination botsniper and botexploit
-botsniper = buy tokens if tokens already have liquidity or activate swap quickly.
+combination botsniper and botexploit\
+botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
 botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
 
 # features sniper
@@ -60,12 +60,10 @@ a little information, if you don't have a special node blockchain private as nee
 2. (firstlaunchbuy) buy token with same blockNumber method addLiquidity or other method token. 
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitFirstlaunchbuy.png?raw=true)
 
-3. below is the old bot version\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
-- below are some examples of screenshots using the frontrun bot using node websocket free
-- hash transaction Pair
+- below are some examples of screenshots using firstlaunchbuy with node blockchain websocket free version
+- hash transaction Target
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
-- hash transaction buy token
+- hash my transaction
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
 - watch my video example : https://youtu.be/FC6_BASNzvg
 
