@@ -1,60 +1,66 @@
 # BOTDEXDAMAR
-this is a combination of sniper bot, frontrun bot, watch telegram
+combination botsniper and botexploit
+botsniper = buy tokens if tokens already have liquidity or activate swap quickly.
+botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
 
-pancakeswap trading bots with FRONTRUNNING, SNIPERBOT and WATCH TELEGRAM.
-
-# features
+# features sniper
 for more details, please check the config/config.js file
 ```
-[SCRIPT] custom node url
-[SCRIPT] super fast performance estimate 1-2s
-[SCRIPT] auto set super high gwei buy method
-[SCRIPT] auto set gas limit correctly on buy or sell method
-[SCRIPT] auto swap token with support fees
-[SCRIPT] custom gwei on sell or buy method
-[SCRIPT] auto detect liquidity WBNB or other
-[SCRIPT] buy with targetbulk
-[swap] auto swap token with delay / timeout
-[swap] anti scam token cantsell
-[swap] anti scam token high tax 70%++
-[swap] auto detection pause trade buy
-[swap] auto trade sell token method
-[swap] auto takeprofit and cutlose on autotrade sell token
-[swapbuyfaster] auto swap buy token with super fast performance
-[swapbuyfaster] auto detection pause trade buy
-[swapbulkdirect] bruteforce buy before launch
-[swapbuyfrontrun] buy token with same block add liquidity or other
-[presale] auto buy presale with fast performance
-[watch telegram] buy token with address in telegram channel or grub
+(SNIPER) all process using SCRIPT
+(SNIPER) custom node url.
+(SNIPER) custom gwei, gaslimit, slippage.
+(SNIPER) auto detect liquidity or enable swap.
+(SWAP) anti honeypot.
+(SWAP) auto takeprofit and cutlose on autotrade sell token.
+(SWAP) swap token with delay / timeout.
+(SWAP) spam buy before or after launch with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(PRESALE) auto detect unlock presale.
+(PRESALE) spam tx before launch presale with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
 ```
+
+# features exploit
+for more details, please check the config/config.js file
+```
+(EXPLOIT) custom node url.
+(EXPLOIT) custom gwei, gaslimit, slippage.
+(EXPLOIT) free mempool premium for filter transaction.
+(FIRSTLAUNCHBUY) swap token with in the same blockNumber along with addLiquidity method or enable swap. this process using SCRIPT or CUSTOM ROUTER.
+(FIRSTLAUNCHBUY) swap token with custom router. this process using CUSTOM ROUTER for all process bot exploit.
+(FIRSTLAUNCHBUY) swap token with custom router and chi gas token for reduce transaction fees. this process using CUSTOM ROUTER for process reduce transaction fees.
+(FIRSTLAUNCHBUY) swap token with bulk transactions using custom router. this process using CUSTOM ROUTER for process send bulk transaction with same blockNumber.
+(FIRSTLAUNCHBUY) spam buy before launch with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(SANDWICH) swap token with sandwich and arbitrange method. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
+(SANDWICH) swap token with high gwei before target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
+(SANDWICH) sell all balance token after buy and after target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
+(BUYBULK) spam buy with nonce difference of 1 blockNumber per transaction with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+```
+
 # screnshot
-some screenshots of this bot home
+some screenshots of this bot
 
 1. home\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.jpg?raw=true)
-
-2. menu swap\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/menuswap.jpg?raw=true)
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.png?raw=true)
 
 # bot sniper
-1. (swap) token fraud prevention, TRANSFER_FROM_FAILED\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swap.jpg?raw=true)
+1. home\
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniper.png?raw=true)
 
-2. (swapbuyfaster) buy token with faster and bulk but limited feature\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfaster.jpg?raw=true)
+3. (swap) sniper token\
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwap.png?raw=true)
 
-3. (swapbulkdirect) buy token with bruteforce before addliqudity or other\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapbulkdirect.jpg?raw=true)
-
-4. (swap + watch telegram) buy token with address in telegram channel or grub\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapwatchtelegram.jpg?raw=true)
-
-5. (presale) buy token in presale dxsale\
+3. (presale) sniper presale address\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
-# bot frontrun
-1. (swapbuyfrontrun) buy token with same blockNumber addLiquidity or other. 
-doesn't need special private node like GETH you just need to set up websocket node, and you can get it for free or paid 100% working\
+# bot exploit
+a little information, if you don't have a special node blockchain private as needed by other bots, calm down because this bot already provides a premium node blockchain to filter transactions so you only need blockchain fee or paid to enable sending your transactions\
+
+1. home\
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploit.png?raw=true)
+
+2. (firstlaunchbuy) buy token with same blockNumber method addLiquidity or other method token. 
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitFirstlaunchbuy.png?raw=true)
+
+3. below is the old bot version\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun.jpg?raw=true)
 - below are some examples of screenshots using the frontrun bot using node websocket free
 - hash transaction Pair
@@ -77,10 +83,7 @@ doesn't need special private node like GETH you just need to set up websocket no
 
 # price
 ```
-bot sniper = $100 BUSD
-bot frontrun = ??? BUSD
-bot sniper + bot frontrun = ??? BUSD
-watch telegram = $15 BUSD
+bot sniper + bot frontrun = $1100 BUSD
 
 If your funds are low you can buy with custom features and trim some features
 You can negotiate the price with us, contact us immediately
