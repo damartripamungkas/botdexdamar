@@ -74,6 +74,13 @@ a little information, if you don't have a special node blockchain private as nee
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
 - watch my video example : https://youtu.be/FC6_BASNzvg
 
+# information
+- language : javascript
+- framework : nodejs
+- is it open source : true 
+- is it compiled : false
+- minimun spesification : 1 GB RAM
+
 # question
 1. is there a monthly fee? no, you only pay once.
 2. does it need a private node to run it? no, our bots can be run using private node or free node.
