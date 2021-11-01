@@ -56,7 +56,7 @@ some screenshots of this bot
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
 # bot exploit
-a little information, if you don't have a special node blockchain private as needed by other bots, calm down because this bot already provides a premium node blockchain to filter transactions so you only need blockchain fee or paid to enable sending your transactions\
+a little information, if you don't have a special node private blockchain as needed by other bot, calm down because this bot already provides a premium node blockchain to filter transactions so you only need node blockchain free or paid to enable sending your transactions\
 
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploit.png?raw=true)
