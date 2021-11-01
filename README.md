@@ -79,7 +79,6 @@ a little information, if you don't have a special node private blockchain as nee
 - framework : nodejs
 - is it open source : true 
 - is it compiled : false
-- minimun spesification : 1 GB RAM
 
 # question
 1. is there a monthly fee? no, you only pay once.
