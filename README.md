@@ -72,7 +72,8 @@ a little information, if you don't have a special node private blockchain as nee
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
 - hash my transaction
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
-- watch my video example : https://youtu.be/FC6_BASNzvg
+- watch my video example (v6.0.0) : https://youtu.be/FC6_BASNzvg
+- watch my video example (v8.0.0) : https://youtu.be/pX-SkcBzRIY
 
 # information
 - language : javascript
