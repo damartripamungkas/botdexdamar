@@ -6,6 +6,7 @@ botexploit = it's so hard to explain but the features in this are frontrun, back
 # changelog to V8.0.0
 1. fix bug and tune up performance
 2. add botexploit and add awesome features in botexploit
+3. etc..
 
 # features sniper
 for more details, please check the config/config.js file
