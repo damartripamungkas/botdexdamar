@@ -85,11 +85,11 @@ a little information, if you don't have a special node private blockchain as nee
 1. is there a monthly fee? no, you only pay once.
 2. does it need a private node to run it? no, our bots can be run using private node or free node.
 3. is there an update or repair fee? no, for updates and repairs we provide for free.
-4. how to buy tokens fast? suggest using frontrun bot to buy tokens fast.
-5. how to get this bot to buy tokens quickly? in addition to using a frontrun bot I suggest using a private node like quicknode.
+4. how to buy tokens fast? suggest using botexploit to buy tokens fast.
+5. how to get this bot to buy tokens quickly? in addition to using a botexploit I suggest using a private node like quicknode.
 6. does it need a vps to run it? no, you can run it on a local computer but to get good speed I suggest using a vps or rdp.
 7. can it be run using android? yes, you can run it using an application like termux.
-8. dex what support in this bot? pancakeswap, uniswap, apeswap, and others.
+8. dex what support in this bot? pancakeswap, uniswap, apeswap, and others dex with structur code UniswapV2.
 9. what language is used in this bot? javascript and framework nodejs
 10. is this bot safe from theft of funds in the wallet? This bot is 100% safe, there is no theft of funds or other suspicious things.
 
