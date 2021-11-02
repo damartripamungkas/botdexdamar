@@ -45,14 +45,20 @@ some screenshots of this bot
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.png?raw=true)
 
+2. calculate max tx fee\
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/toolsCalculateTxFee.png?raw=true)
+
 # bot sniper
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniper.png?raw=true)
 
-3. (swap) sniper token\
+2. (swap) sniper token\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwap.png?raw=true)
 
-3. (presale) sniper presale address\
+3. (swap) autoTradeSellToken after sniper token
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwapAutoTradeSellToken.png?raw=true)
+
+4. (presale) sniper presale address\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
 # bot exploit
