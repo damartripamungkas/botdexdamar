@@ -3,10 +3,12 @@ combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
 botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
 
-# changelog to V8.0.0
-1. fix bug and tune up performance
-2. add botexploit and add awesome features in botexploit
-3. etc..
+# changelog to V8.1.0
+1. remove open source :(
+2. compile the script to execute so that it is easy and has minimal bugs 
+3. added a minimum target amount, delay feature in the sandwich feature 
+4. added autoTradeSellToken feature in firstlaunchbuy features 
+5. fix bug and tune up performance 
 
 # features sniper
 for more details, please check the config/config.js file
@@ -34,9 +36,12 @@ for more details, please check the config/config.js file
 (FIRSTLAUNCHBUY) swap token with custom router and chi gas token for reduce transaction fees. this process using CUSTOM ROUTER for process reduce transaction fees.
 (FIRSTLAUNCHBUY) swap token with bulk transactions using custom router. this process using CUSTOM ROUTER for process send bulk transaction with same blockNumber.
 (FIRSTLAUNCHBUY) spam buy before launch with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(FIRSTLAUNCHBUY) auto takeprofit and cutlose on autotrade sell token.
 (SANDWICH) swap token with sandwich and arbitrange method. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
 (SANDWICH) swap token with high gwei before target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
 (SANDWICH) sell all balance token after buy and after target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
+(SANDWICH) delay after execute sandwich
+(SANDWICH) filterMinimumAmountTarget
 (BUYBULK) spam buy with nonce difference of 1 blockNumber per transaction with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
 ```
 
@@ -74,19 +79,22 @@ a little information, if you don't have a special node private blockchain as nee
 3. (sandwich) buy token before target do success buy and after that sell all the tokens.
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich.png?raw=true)
 
-- below are some examples of screenshots using firstlaunchbuy with node blockchain websocket free version
-- hash transaction Target
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun2.png?raw=true)
-- hash my transaction
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/swapfrontrun3.png?raw=true)
+- sandwich results with capital $1 amount and profit $0.025 :).
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich2.png?raw=true)
+- txhash buy = https://bscscan.com/tx/0x25f7cf89d1b5d7e4c457544be1222ae7908634f40de4611f072ab65313a6b84f
+- txhash sell = https://bscscan.com/tx/0xc57572e1c98a10bd4c47df7e99f61d4be31138ab89f1c2736948300280b70d2c
+- txhash target = https://bscscan.com/tx/0x85ccdf8c347d9bbc7d08f2ad5f5cd589c5844448206d52a38f0a4462043c6bde
+
+# video
 - watch my video example (v6.0.0) : https://youtu.be/FC6_BASNzvg
 - watch my video example (v8.0.0) : https://youtu.be/pX-SkcBzRIY
+- watch my video example (v8.1.0) : https://youtu.be/b4N4MyZPgYI
 
 # information
 - language : javascript
 - framework : nodejs
-- is it open source : true 
-- is it compiled : false
+- is it open source : false
+- is it compiled : true
 
 # question
 1. is there a monthly fee? no, you only pay once.
@@ -102,10 +110,8 @@ a little information, if you don't have a special node private blockchain as nee
 
 # price
 ```
-bot sniper + bot frontrun = $??? BUSD
-
-If your funds are low you can buy with custom features and trim some features
-You can negotiate the price with us, contact us immediately
+botsniper = $100
+1 package botdexdamar = $???
 ```
 
 # contactus
