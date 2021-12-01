@@ -114,6 +114,7 @@ a little information, if you don't have a special node private blockchain as nee
 ```
 botsniper = $100
 1 package botdexdamar = $???
+if you buy it you can only add 1 address whitelist that you will use
 ```
 
 # contactus
