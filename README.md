@@ -10,6 +10,7 @@ all botdexdamar features require 1 target token to execute.
 3. added a minimum target amount, delay feature in the sandwich feature 
 4. added autoTradeSellToken feature in firstlaunchbuy features 
 5. fix bug and tune up performance 
+6. etc...
 
 # features sniper
 for more details, please check the config/config.js file
