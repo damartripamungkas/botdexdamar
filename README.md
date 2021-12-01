@@ -1,7 +1,8 @@
 # BOTDEXDAMAR
 combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
-botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
+botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.\
+all botdexdamar features require 1 target token to execute.
 
 # changelog to V8.1.0
 1. remove open source :(
