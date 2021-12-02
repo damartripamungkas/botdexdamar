@@ -2,6 +2,7 @@
 combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
 botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.\
+
 all botdexdamar features require 1 target token to execute.
 
 # changelog to V8.1.0
@@ -60,14 +61,8 @@ some screenshots of this bot
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniper.png?raw=true)
 
-2. (swap) sniper token\
+2. (swap) sniper token and autoTradeSellToken\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwap.png?raw=true)
-
-3. (swap) autoTradeSellToken after sniper token
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwapAutoTradeSellToken.png?raw=true)
-
-4. (presale) sniper presale address\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/presale.jpg?raw=true)
 
 # bot exploit
 a little information, if you don't have a special node private blockchain as needed by other bot, calm down because this bot already provides a premium node blockchain to filter transactions so you only need node blockchain free or paid to enable sending your transactions\
@@ -80,12 +75,6 @@ a little information, if you don't have a special node private blockchain as nee
 
 3. (sandwich) buy token before target do success buy and after that sell all the tokens.
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich.png?raw=true)
-
-- sandwich results with capital $1 amount and profit $0.025 :).
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich2.png?raw=true)
-- txhash buy = https://bscscan.com/tx/0x25f7cf89d1b5d7e4c457544be1222ae7908634f40de4611f072ab65313a6b84f
-- txhash sell = https://bscscan.com/tx/0xc57572e1c98a10bd4c47df7e99f61d4be31138ab89f1c2736948300280b70d2c
-- txhash target = https://bscscan.com/tx/0x85ccdf8c347d9bbc7d08f2ad5f5cd589c5844448206d52a38f0a4462043c6bde
 
 # video
 - watch my video example (v6.0.0) : https://youtu.be/FC6_BASNzvg
