@@ -57,6 +57,9 @@ some screenshots of this bot
 2. calculate max tx fee\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/toolsCalculateTxFee.png?raw=true)
 
+3. transfer your whitelist
+![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/toolsTransferWhitelist.png?raw=true)
+
 # bot sniper
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniper.png?raw=true)
