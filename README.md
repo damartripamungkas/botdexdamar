@@ -6,7 +6,7 @@ botexploit = it's so hard to explain but the features in this are frontrun, back
 all botdexdamar features require 1 target token to execute.
 
 # changelog to V8.1.0
-1. remove open source :(
+1. remove open source
 2. compile the script to execute so that it is easy and has minimal bugs 
 3. added a minimum target amount, delay feature in the sandwich feature 
 4. added autoTradeSellToken feature in firstlaunchbuy features 
@@ -23,9 +23,9 @@ for more details, please check the config/config.js file
 (SWAP) anti honeypot.
 (SWAP) auto takeprofit and cutlose on autotrade sell token.
 (SWAP) swap token with delay / timeout.
-(SWAP) spam buy before or after launch with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(SWAP) spam buy before or after launch with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 (PRESALE) auto detect unlock presale.
-(PRESALE) spam tx before launch presale with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(PRESALE) spam tx before launch presale with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 ```
 
 # features exploit
@@ -35,17 +35,16 @@ for more details, please check the config/config.js file
 (EXPLOIT) custom gwei, gaslimit, slippage.
 (EXPLOIT) free mempool premium for filter transaction.
 (FIRSTLAUNCHBUY) swap token with in the same blockNumber along with addLiquidity method or enable swap. this process using SCRIPT or CUSTOM ROUTER.
-(FIRSTLAUNCHBUY) swap token with custom router. this process using CUSTOM ROUTER for all process bot exploit.
 (FIRSTLAUNCHBUY) swap token with custom router and chi gas token for reduce transaction fees. this process using CUSTOM ROUTER for process reduce transaction fees.
-(FIRSTLAUNCHBUY) swap token with bulk transactions using custom router. this process using CUSTOM ROUTER for process send bulk transaction with same blockNumber.
-(FIRSTLAUNCHBUY) spam buy before launch with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(FIRSTLAUNCHBUY) swap token with bulk transactions using custom router. this process using CUSTOM ROUTER for process send bulk transaction on 1 transaction.
+(FIRSTLAUNCHBUY) spam buy before launch with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 (FIRSTLAUNCHBUY) auto takeprofit and cutlose on autotrade sell token.
 (SANDWICH) swap token with sandwich and arbitrange method. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
 (SANDWICH) swap token with high gwei before target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
 (SANDWICH) sell all balance token after buy and after target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
 (SANDWICH) delay after execute sandwich
 (SANDWICH) filterMinimumAmountTarget
-(BUYBULK) spam buy with nonce difference of 1 blockNumber per transaction with targetBulk. this process using SCRIPT for process send bulk transaction with different blockNumber.
+(BUYBULK) spam buy with nonce difference of 1 blockNumber per transaction with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 ```
 
 # screnshot
