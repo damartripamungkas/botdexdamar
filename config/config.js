@@ -16,35 +16,38 @@ module.exports = {
         router: "0x10ED43C718714eb63d5aA57B78B54704E256024E", // address router with structur code UniswapV2, format INPUT is address.
         honeypotIs: "0x2bf75fd2fab5fc635a4c6073864c708dfc8396fc", // function for "antiScamTokenCantSell", format INPUT is address.
         chiGasToken: "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c", // chi gas token for reduce transaction fees, for botexploit, format INPUT is address.
-        customRouter: "0x27135f020817b536474F8a2eB49731ef848D025e", // custom router for swap tx, format INPUT is address.
-        addressSignIn: "0x27135f020817b536474F8a2eB49731ef848D025e", // address to signin for account in the bot, format INPUT is address.
+        customRouter: "0x0309bc0d9ce3501d55f768f307cdbdbd6391eaaa", // custom router for swap tx, format INPUT is address.
+        addressSignIn: "0x0309bc0d9ce3501d55f768f307cdbdbd6391eaaa", // address to signin for account in the bot, format INPUT is address.
         addressTokenUsedToBuy: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", // [TOKEN-0] address that will be used to buy token, format INPUT is address.
-        addressTokenOrPresale: "0xe9e7cea3dedca5984780bafc599bd69add087d56", // [TOKEN-1] address token or presale to buy, format INPUT is address.
+        addressTokenOrPresale: "0x9fdc3ae5c814b79dca2556564047c5e7e5449c19", // [TOKEN-1] address token or presale to buy, format INPUT is address.
         storeAddressWrappedCoin: [
             { address: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", chainid: "1" }, // WETH
             { address: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", chainid: "56" }, // WBNB
             { address: "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23", chainid: "25" }, // WCRO
-        ]
+        ],
     },
     transaction: {
-        gwei: "auto", // gwei or gasPrice transaction, format INPUT is NUMBER, TEXT(auto).
-        amount: "0.00001", // amount token to buy token. format INPUT is NUMBER.
-        gasLimit: "500000", // gas limit transaction. format INPUT is NUMBER.
-        waitTxStatus: "enable", // wait transaction status success or failed, format INPUT is TEXT(enable, disable).
+        gwei: "auto", // gwei transaction, format INPUT is NUMBER, TEXT(auto).
+        amount: "0.05", // amount token to buy token. format INPUT is NUMBER.
+        gasLimit: "300000", // gas limit transaction. format INPUT is NUMBER.
+        waitTxStatus: "disable", // wait transaction status success or failed, format INPUT is TEXT(enable, disable).
         botsniper: {
             intervalCheck: "500", // input time mileseconds for interval check, format INPUT is NUMBER.
             optionSwap: {
                 buy: {
                     antiscamtokencantsell: "disable", // only support pair WBNB or BNB, example TOTEN/WBNB, TOTEN/BNB, if liquidity not WBNB or BNB set this to disable. format INPUT is TEXT(enable, disable)
-                    waitingForLiquidity: "enable", // if this is set to disable, bot wil buy token without liquidity, format INPUT is TEXT(enable, disable).
+                    waitingForLiquidity: "disable", // if this is set to disable, bot wil buy token without liquidity, format INPUT is TEXT(enable, disable).
                     targetBulk: "1", // target bulk for swap, this method using SCRIPT to send bulk transaction with different transaction, format INPUT is NUMBER.
                     timeout: "disable", // delay seconds before buy token for bypass antibot on token, format INPUT is NUMBER, TEXT(disable).
                 },
                 sell: {
-                    // if you use "takeprofit" or "cutlose" you must be set "useSellToken" to enable
-                    useSellToken: "disable", // set enable and bot will sell token after buy token, format INPUT is TEXT(enable, disable).
-                    takeprofit: "200", // percentage increase in token price, format INPUT is NUMBER, TEXT(disable).
-                    cutlose: "50", // percentage decrease in token price, max 100, format INPUT is NUMBER, TEXT(disable).
+                    /**
+                     * autoTradeSellToken
+                     * if you use "takeprofit" or "cutlose" you must be set "useSellToken" to enable
+                     */
+                    useSellToken: "enable", // set enable and bot will sell token after buy token, format INPUT is TEXT(enable, disable).
+                    takeprofit: "1", // percentage increase in token price, format INPUT is NUMBER, TEXT(disable).
+                    cutlose: "99", // percentage decrease in token price, max 100, format INPUT is NUMBER, TEXT(disable).
                 }
             },
             optionPresale: {
@@ -60,19 +63,39 @@ module.exports = {
              * custom = means the bot will filter transactions using "urlMainNode", and after finding a matching transaction the bot will send transactions using "urlMainNode"
              */
             use: "default", // if your have private node GETH, set this is to custom and set if no have set this is to default, format INPUT is TEXT(default, custom).
-            key: "dasdawdasd-asdawd232-asdaw31-sdadausdhuwu", // function for default, contact author to get key, format INPUT is TEXT.
+            key: "asdhaasd-adasdwad-as3434343", // function for default, contact author to get key, format INPUT is TEXT.
             customRouter: {
                 /**
+                 * about customRouter:
                  * custom router works like a regular pancakeswap router but it is custom made and added some interesting features in it, and custom router will process transactions on internal. contact the author to request a custom router if you have purchased this botexploit
                  * if you set "useChiGasToken" to enable you must be enable "useCustomRouter"
-                 * and if you set "useCustomRouter" to enable bot will process all botexploit transaction using CUSTOM ROUTER 
-                 * if you set "useCustomRouter" to enable bot will process "targetBulk" with custom contract which will process transaction in 1 block
+                 * if you set "useCustomRouter" to enable bot will process all botexploit features transaction using CUSTOM ROUTER 
+                 * if you set "useCustomRouter" to enable bot will process "targetBulk" in 1 transaction
                  */
                 useChiGasToken: "disable", // if you set "gwei" superhigh, set this feature to enable to reduce transaction fees and make sure you have the chi token, format INPUT is TEXT(enable, disable)
-                useCustomRouter: "disable" // set to enable to use router with custom router, format INPUT is TEXT(enable, disable)
+                useCustomRouter: "enable" // set to enable to use router with custom router, format INPUT is TEXT(enable, disable)
             },
             optionSwap: {
                 firstLaunchBuy: {
+                    /**
+                     * how the firstlaunchbuy feature works:
+                     * 1. The bot will look for the addLiquidity transaction or token method in the mempool according to the value set "filterMethodTokenFromAddress" if the value "usefilterMethodTokenFromAddress" is set to enable
+                     * 2. if you have found the bot will make purchases on the same blockNumber with more than 1 purchase if "targetBulk" is set more than 1
+                     * 3. after buying, the bot will sell token with takeprofit or cutlose settings if the value "useSellToken" is set to enable
+                     * 
+                     * the settings that need to be set in this file config.js to run the firstlaunchbuy feature:
+                     * - allUrl
+                     * - myWallet
+                     * - allAddress
+                     * - transaction/gwei
+                     * - transaction/amount
+                     * - transaction/gasLimit
+                     * - transaction/waitTxStatus
+                     * - botexploit/use
+                     * - botexploit/key
+                     * - botexploit/customRouter
+                     * - botexploit/firstLaunchBuy
+                     */
                     targetBulk: "1", // if you set "useeCustomRouter" to enable then the bot will send bulk transaction with CUSTOM ROUTER and will do it in 1 transaction, vice versa bot will send bulk transaction with SCRIPT and will do it in different transactions, format INPUT is NUMBER
                     tokenFilterSettings: {
                         filterMethodTokenFromAddress: {
@@ -100,21 +123,47 @@ module.exports = {
                      * how the sandwich feature works:
                      * 1. The bot will search for transactions according to the token address that has been set
                      * 2. The bot will buy if the BUY method is detected and if the target amount is greater than "filterMinimumAmountTarget" then the bot will buy tokens using the gwei setting "multipleGweiTxBeforeTargetTx"
-                     * 3. after buying the bot will sell all the tokens obtained from the purchase at that time quickly
+                     * 3. after buying the bot will sell all the tokens earned from purchasing with the gwei standard blockchain at the same time
                      * 4. after that the bot will check whether the "delayAfterTx" setting has been filled with a numerical value then the bot will wait until it reaches the "delayAfterTx" value in seconds time format
                      * 5. after completion number 4, the bot will look for the transaction number 1 again
+                     * 
+                     * the settings that need to be set in this file config.js to run the sandwich feature:
+                     * - allUrl
+                     * - myWallet
+                     * - allAddress
+                     * - transaction/amount
+                     * - transaction/gasLimit
+                     * - transaction/waitTxStatus
+                     * - botexploit/use
+                     * - botexploit/key
+                     * - botexploit/customRouter
+                     * - botexploit/sandwich
                      */
-                    delayAfterTx: "240", // delay seconds after your tx sandwich, format INPUT is NUMBER, TEXT(disable).
-                    multipleGweiTxBeforeTargetTx: "1.1", // value must be more than 1. example flow work, target buy token BUSD with 5 gwei bot will multiple gwei with this set, format INPUT is NUMBER.
+                    delayAfterTx: "5", // delay seconds after your tx sandwich, format INPUT is NUMBER, TEXT(disable).
+                    multipleGweiTxBeforeTargetTx: "1.3", // the value must be more than 1. example of how it works, the target of buying BUSD tokens with 5 gwei bots will do multiple gwei targets with this set and the results of the gwei calculations will be used for the first BUY, format INPUT is NUMBER.
                     filterMinimumAmountTarget: {
                         coin: "0.01", // minimum amount swap target in the number of coin target example BNB, ETH, CRO, format INPUT is NUMBER.
-                        token: "1" // minimum amount swap target in the number of token target [TOKEN-1], format INPUT is NUMBER.
+                        token: "0.01" // minimum amount swap target in the number of token target [TOKEN-1], format INPUT is NUMBER.
                     },
                 },
                 buyBulk: {
                     /**
-                     * this method using SCRIPT to send bulk transaction with different transaction.
-                     * a suggestion if you use this feature please set the token balance amount with a nominal multiple of no more than x2 of your total token balance because if the bot succeeds in making a transaction then the bot will not make duplicate transactions
+                     * how the buyBulk feature works:
+                     * 1. the bot will buy tokens according to the amount of the "targetBulk" value without waiting for the transaction status
+                     * 2. the bot will delay before the transaction continues with the seconds time format according to the "delayPerTx" value if the "delayPerTx" value is not disable
+                     * 3. if the value "stopIfSuccessEntered" is set to enable then the bot will check the balance of the wallet token that you want to buy whether it has entered your wallet or not if it is already entered the bot will stop making purchases
+                     * 
+                     * note: this method use SCRIPT to send bulk transactions with different transactions. and use ROUTER not CUSTOM ROUTER.
+                     * 
+                     * the settings that need to be set in this file config.js to run the buyBulk feature:
+                     * - allUrl
+                     * - myWallet
+                     * - allAddress
+                     * - transaction/gwei
+                     * - transaction/amount
+                     * - transaction/gasLimit
+                     * - transaction/waitTxStatus
+                     * - botexploit/buyBulk
                      */
                     stopIfSuccessEntered: "enable", // if this set to enable bot will automatically stop if the token has been successfully entered into the wallet. format INPUT is TEXT(enable, disable).
                     delayPerTx: "disable", // milesecond delay for each transaction, format INPUT is NUMBER, TEXT(disable).
