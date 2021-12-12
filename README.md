@@ -75,7 +75,7 @@ a little information, if you don't have a special node private blockchain as nee
 2. (firstlaunchbuy) buy token with same blockNumber method addLiquidity or other method token. 
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitFirstLaunchBuy.png?raw=true)
 
-3. (sandwich) buy token before target do success buy and after that sell all the tokens.
+3. (sandwich) buy token before target do success buy and after that sell all the tokens in same blockNumber.
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich.png?raw=true)
 
 # video
