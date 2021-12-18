@@ -1,20 +1,13 @@
 # BOTDEXDAMAR
+![](https://github.com/damartripamungkas/botdexdamar/blob/main/images/logo.png)
 combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
 botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
 
 all botdexdamar features require 1 target token to execute.
 
-# changelog to V8.1.0
-1. remove open source
-2. compile the script to execute so that it is easy and has minimal bugs 
-3. added a minimum target amount, delay feature in the sandwich feature 
-4. added autoTradeSellToken feature in firstlaunchbuy features 
-5. fix bug and tune up performance 
-6. etc...
-
 # comunity
-download file bot in here and update info bot :
+download file bot in here and all update information bot :
 https://t.me/botdexdamar
 
 # features sniper
