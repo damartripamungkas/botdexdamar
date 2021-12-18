@@ -14,7 +14,7 @@ all botdexdamar features require 1 target token to execute.
 6. etc...
 
 # comunity
-download file bot in here and info bot :
+download file bot in here and update info bot :
 https://t.me/botdexdamar
 
 # features sniper
