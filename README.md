@@ -2,7 +2,7 @@
 ![](https://github.com/damartripamungkas/botdexdamar/blob/main/images/logo.png)\
 combination botsniper and botexploit\
 botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
-botexploit = it's so hard to explain but the features in this are frontrun, backrun, arbitrange.
+botexploit = it's so hard to explain but the features in this are frontrun, backrun.
 
 all botdexdamar features require 1 target token to execute.
 
@@ -19,15 +19,12 @@ below is an understanding of the features of this bot :\
 for more details, please check the config/config.js file
 ```
 (SNIPER) all process using SCRIPT
-(SNIPER) custom node url, gwei, gaslimit, slippage.
+(SNIPER) custom node url, gwei, gaslimit.
 (SNIPER) auto detect liquidity or enable swap with method simulate transaction.
-(SWAP) anti honeypot.
 (SWAP) auto takeprofit and cutlose on autotrade sell token.
 (SWAP) swap token with delay / timeout.
-(SWAP) spam buy before or after launch with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 (AUTOTRADESELLTOKENONLY) autotradeselltoken without having to buy tokens using this bot
 (PRESALE) auto detect unlock presale.
-(PRESALE) spam tx before launch presale with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
 ```
 
 # features exploit
@@ -86,6 +83,7 @@ a little information, if you don't have a special node private blockchain as nee
 # information
 - language : javascript
 - framework : nodejs
+- type transaction : only legacy for now
 - open source : no
 - compiled : yes
 
@@ -98,8 +96,8 @@ a little information, if you don't have a special node private blockchain as nee
 
 # price
 ```
-botsniper = $100
-botexploit + free botsniper = $1600
+botsniper = $???
+botexploit + free botsniper = $???
 
 note : if you buy it, you can only add 1 whitelist address that you will use and if you want to change your whitelist address we have provided tools to transfer your whitelist
 ```
