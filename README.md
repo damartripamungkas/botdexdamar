@@ -1,9 +1,5 @@
 # BOTDEXDAMAR
 ![](https://github.com/damartripamungkas/botdexdamar/blob/main/images/logo.png)\
-combination botsniper and botexploit\
-botsniper = buy tokens if tokens already have liquidity or activate swap quickly.\
-botexploit = it's so hard to explain but the features in this are frontrun, backrun.
-
 all botdexdamar features require 1 target token to execute.
 
 # comunity
@@ -15,65 +11,14 @@ below is an understanding of the features of this bot :\
 - SCRIPT = direct execution process carried out by this bot in the OFF-CHAIN of your device\
 - CUSTOM ROUTER = direct execution process carried out by the blockchain network in ON-CHAIN using smart contract
 
-# features sniper
+# features on bot
 for more details, please check the config/config.js file
-```
-(SNIPER) all process using SCRIPT
-(SNIPER) custom node url, gwei, gaslimit.
-(SNIPER) auto detect liquidity or enable swap with method simulate transaction.
-(SWAP) auto takeprofit and cutlose on autotrade sell token.
-(SWAP) swap token with delay / timeout.
-(AUTOTRADESELLTOKENONLY) autotradeselltoken without having to buy tokens using this bot
-(PRESALE) auto detect unlock presale.
-```
-
-# features exploit
-for more details, please check the config/config.js file
-```
-(EXPLOIT) custom node url, custom gwei, gaslimit, slippage
-(EXPLOIT) free mempool premium for filter pending transaction.
-(FIRSTLAUNCHBUY) swap token with in the same blockNumber along with addLiquidity method or enable swap. this process using SCRIPT or CUSTOM ROUTER.
-(FIRSTLAUNCHBUY) swap token with custom router and chi gas token for reduce transaction fees. this process using CUSTOM ROUTER.
-(FIRSTLAUNCHBUY) swap token with bulk transactions using custom router. this process using CUSTOM ROUTER for process send bulk transaction on 1 transaction.
-(FIRSTLAUNCHBUY) auto takeprofit and cutlose on autotrade sell token.
-(SANDWICH) swap token with sandwich. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
-(SANDWICH) swap token with high gwei before target success do transaction. this process using CUSTOM ROUTER for process sandwich.
-(SANDWICH) sell all balance token after buy and after target success do transaction. this process using SCRIPT or CUSTOM ROUTER for process sandwich.
-(SANDWICH) delay after execute sandwich
-(SANDWICH) filterMinimumAmountTarget
-(BUYBULK) spam buy with targetBulk. this process using SCRIPT for process send bulk transaction with different transaction.
-```
 
 # screnshot
 some screenshots of this bot
 
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.png?raw=true)
-
-2. calculate max tx fee\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/toolsCalculateTxFee.png?raw=true)
-
-3. transfer your whitelist
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/toolsTransferWhitelist.png?raw=true)
-
-# bot sniper
-1. home\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniper.png?raw=true)
-
-2. (swap) sniper token and autoTradeSellToken\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botsniperSwap.png?raw=true)
-
-# bot exploit
-a little information, if you don't have a special node private blockchain as needed by other bot, calm down because this bot already provides a premium node blockchain to filter transactions so you only need node blockchain free or paid to enable sending your transactions\
-
-1. home\
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploit.png?raw=true)
-
-2. (firstlaunchbuy) buy token with same blockNumber method addLiquidity or other method token. 
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitFirstLaunchBuy.png?raw=true)
-
-3. (sandwich) buy token before target do success buy and after that sell all the tokens in same blockNumber.
-![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/botexploitSandwich.png?raw=true)
 
 # video
 - watch my video example (v6.0.0) : https://youtu.be/FC6_BASNzvg
@@ -96,8 +41,8 @@ a little information, if you don't have a special node private blockchain as nee
 
 # price
 ```
-botsniper = $???
-botexploit + free botsniper = $???
+botsniper = $150
+botexploit + free botsniper = $1600
 
 note : if you buy it, you can only add 1 whitelist address that you will use and if you want to change your whitelist address we have provided tools to transfer your whitelist
 ```
