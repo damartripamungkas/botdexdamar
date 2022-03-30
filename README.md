@@ -41,8 +41,8 @@ some screenshots of this bot
 
 # price
 ```
-botsniper = $150
-botexploit + free botsniper = $1600
+botsniper = $???
+botexploit + free botsniper + $????
 
 note : if you buy it, you can only add 1 whitelist address that you will use and if you want to change your whitelist address we have provided tools to transfer your whitelist
 ```
