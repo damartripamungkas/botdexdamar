@@ -3,16 +3,32 @@
   <img src="https://github.com/damartripamungkas/botdexdamar/blob/main/images/logo.png" width="auto" height="280"/>
 </p>
 
-  ![build](https://github.com/ntkme/github-buttons/workflows/build/badge.svg)
+<p align="center">
+  <img src="https://github.com/ntkme/github-buttons/workflows/build/badge.svg" alt="build"/>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white" alt="ethereum" />
+  <img src="https://img.shields.io/badge/Binance-FCD535?style=for-the-badge&logo=binance&logoColor=white" alt="bsc" />
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="javascript" />
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs" />
+  <img src="https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white" alt="solidity" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="linux" />
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="windows" />
+  <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" alt="macos" />
+</p>
 
 # Community
 download file bot in here and all update information bot :
 https://t.me/botdexdamar
 
 # Support list
-standard support list\
 for more details, please check the config/config.js file
 |  # |                      support                     |   botsniper/swap   | botsniper/autoTradeSellToken |  botsniper/presale | botexploit/backrun | botexploit/sandwich | botexploit/buybulk |
 |:--:|:------------------------------------------------:|:------------------:|:----------------------------:|:------------------:|:------------------:|:-------------------:|:------------------:|
