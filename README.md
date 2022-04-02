@@ -11,11 +11,6 @@
 download file bot in here and all update information bot :
 https://t.me/botdexdamar
 
-# About features
-below is an understanding of the features of this bot
-- SCRIPT = direct execution process carried out by this bot in the OFF-CHAIN of your device
-- CUSTOM ROUTER = direct execution process carried out by the blockchain network in ON-CHAIN using smart contract
-
 # Support list
 standard support list\
 for more details, please check the config/config.js file
@@ -38,6 +33,7 @@ for more details, please check the config/config.js file
 | 15 |      spam with 1 tx after detect (ON-CHAIN)      |         :x:        |              :x:             |         :x:        | :white_check_mark: |         :x:         |         :x:        |
 | 16 | spam with different tx before detect (OFF-CHAIN) |         :x:        |              :x:             |         :x:        |         :x:        |         :x:         | :white_check_mark: |
 | 17 | spam with different tx after detect (OFF-CHAIN)  | :white_check_mark: |              :x:             | :white_check_mark: | :white_check_mark: |         :x:         |         :x:        |
+| 18 | type transaction | legacy | legacy | legacy | legacy | legacy | legacy | 
 
 # Screenshot
 some screenshots of this bot
@@ -48,9 +44,9 @@ some screenshots of this bot
 # Information
 - language : javascript
 - framework : nodejs
-- type transaction : only legacy for now
 - open source : no
 - compiled : yes
+- support device : windows, linux, macos
 
 # Question
 1. is there a monthly fee? no, you only pay once.
