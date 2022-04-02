@@ -1,4 +1,9 @@
-# BOTDEXDAMAR
+<!-- # BOTDEXDAMAR -->
+
+<br>
+
+<h1 align="center">BOTDEXDAMAR</h1>
+
 <p align="center">
   <img src="https://github.com/damartripamungkas/botdexdamar/blob/main/images/logo.png" width="auto" height="280"/>
 </p>
@@ -23,6 +28,8 @@
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="windows" />
   <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" alt="macos" />
 </p>
+
+<br>
 
 # Community
 download file bot in here and all update information bot :
