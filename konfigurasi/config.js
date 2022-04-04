@@ -199,13 +199,6 @@ module.exports = {
             },
             optionSandwich: {
                 /**
-                 * how the sandwich feature works:
-                 * 1. The bot will search for transactions according to the token address that has been set
-                 * 2. The bot will buy if the BUY method is detected and if the target amount is greater than "filterMinimumAmountTarget" then the bot will buy tokens using the gwei setting "multipleGweiTxBeforeTargetTx"
-                 * 3. after buying the bot will sell all the tokens earned from purchasing with the gwei standard blockchain at the same time
-                 * 4. after that the bot will check whether the "delayAfterTx" setting has been filled with a numerical value then the bot will wait until it reaches the "delayAfterTx" value in seconds time format
-                 * 5. after completion number 4, the bot will look for the transaction number 1 again
-                 * 
                  * about gwei for sandwich : 
                  * 1. if you set gwei to "auto" then bot will send your tx above target tx but not top 1 in block
                  * 2. if you set gwei to "high" then bot will send your tx above target tx and your tx will be in position 1 is block
