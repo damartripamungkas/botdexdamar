@@ -62,6 +62,23 @@ some screenshots of this bot
 1. home\
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.png?raw=true)
 
+# Instalations
+1. windows\
+- download zip
+- extract zip
+- open folder bot and open app bot file
+- select menu encrypt wallet in the bot
+- input your pharse or privatekey 
+- input password
+- copy result text encrypt
+- paste to file config.js on encryptTextFromWallet and save
+- paste your url rpc to urlNodeBlockchain on config.js and save
+- open app bot file again
+- select menu start
+- input your password
+- select dex swap
+- done
+
 # Information
 - language : javascript
 - framework : nodejs
