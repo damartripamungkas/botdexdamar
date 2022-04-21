@@ -40,15 +40,15 @@ for more details, please check the config/config.js file
 |  1 |                       gwei                       | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 |  2 |                      amount                      | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |         :x:         | :white_check_mark: |
 |  3 |                     gaslimit                     | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
-|  4 |                     slippage                     |         :x:        |              :x:             |         :x:        |         :x:        |  :white_check_mark: |         :x:        |
+|  4 |                     slippage                     | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 |  5 |                     auto gwei                    | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 |  6 |                    auto amount                   | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 |  7 |                    sell limit                    | :white_check_mark: |      :white_check_mark:      |         :x:        |         :x:        |         :x:         |         :x:        |
 |  8 |               bypass antibot block               | :white_check_mark: |              :x:             |         :x:        |         :x:        |         :x:         |         :x:        |
-|  9 |               support custom router              |         :x:        |              :x:             |         :x:        | :white_check_mark: |  :white_check_mark: |         :x:        |
+|  9 |               support custom router              |         :x:        |              :x:             |         :x:        | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | 10 |              automatic profit seeker             |         :x:        |      :white_check_mark:      |         :x:        |         :x:        |  :white_check_mark: |         :x:        |
 | 11 |             simulate tx before detect            | :white_check_mark: |              :x:             | :white_check_mark: |         :x:        |         :x:         |         :x:        |
-| 12 |             monitor more than 1 token            |         :x:        |              :x:             |         :x:        |         :x:        |  :white_check_mark: |         :x:        |
+| 12 |             monitor more than 1 token            | :white_check_mark: |      :white_check_mark:      | :white_check_mark: | :white_check_mark: |  :white_check_mark: |         :x:        |
 | 13 |          free mempool filter pending tx          |         :x:        |              :x:             |         :x:        | :white_check_mark: |  :white_check_mark: |         :x:        |
 | 14 |         process tx on 1 block with target        |         :x:        |              :x:             |         :x:        | :white_check_mark: |  :white_check_mark: | :white_check_mark: |
 | 15 |      spam with 1 tx after detect (ON-CHAIN)      |         :x:        |              :x:             |         :x:        | :white_check_mark: |         :x:         |         :x:        |
