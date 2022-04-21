@@ -30,7 +30,7 @@
 <br><br>
 
 # Community
-download file bot in here and all update information bot :
+channel telegram information bot :
 https://t.me/botdexdamar
 
 # Support list
