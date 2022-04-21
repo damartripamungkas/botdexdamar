@@ -110,7 +110,6 @@ let config = {
                  * - transaction/botexploit/backrun
                  */
                 mode: "normal", // the "fast" set only supports the gwei NUMBER set type and if it is activated it doesn't support running multiple bots, format INPUT is TEXT(normal, fast).
-                modeFilter: "tx", // if you set urlNodeBlockchain with http network, set this to "block" and vice versa set this to "tx". info "block" mode is a bit slower than "tx" mode, format INPUT is TEXT(tx, block).
                 targetBulk: "1", // if you set "useCustomRouter" to "enable" then the bot will send bulk transaction with CUSTOM ROUTER and will do it in 1 transaction, vice versa bot will send bulk transaction with SCRIPT and will do it in different transactions, format INPUT is NUMBER
                 filterMethodId: [], // method id must start at 0x and have a length of 10, format INPUT is TEXT
                 filterAddress: ["0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3"], // filter transaction address on object "to", format INPUT is address
