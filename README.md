@@ -56,6 +56,43 @@ for more details, please check the config/config.js file
 | 17 | spam with different tx after detect (OFF-CHAIN)  | :white_check_mark: |              :x:             | :white_check_mark: | :white_check_mark: |         :x:         |         :x:        |
 | 18 | 		     type transaction 			| 	legacy 	     | 		  legacy 	    | 	     legacy 	 | 	legacy 	      |        legacy 	    | 	     legacy 	 | 
 
+# Support network
+* mainnet
+  * ethereum (ETH)
+  * binance smart chain (BSC)
+  * cronos (CRO)
+  * polygon (MATIC)
+  * fantom opera (FTM)
+  * moonbeam (GLMR)
+  * avalanche (AVAX)
+  * arbitrum (ETH)
+  * aurora (ETH)
+  * klaytn (KLAY)
+  * harmony (ONE)
+  * optimism (ETH)
+  * astar (ASTR)
+  * celo (CELO)
+  * gnosis (XDAI)
+  * emeral paratime (ROSE)
+  * moonriver (MOVR)
+  * theta (TFUEL)
+  * fusion (FSN)
+  * metis andromeda (METIS)
+  * rsk (RBTC)
+  * telos evm (TLOS)
+  * kcc (KCS)
+  * iotex network (IOTX)
+  * boba network (ETH)
+  * hoo smart chain (HOO)
+  * okx chain (OKT)
+  * wanchain (WAN)
+  * songbird canary network (SGB)
+  * smart bitcoin cash (BCH)
+  * velas evm (VLX)
+* testnet
+  * ethereum rinkeby (ETH)
+  * binance smart chain TESTNET (TBSC)
+
 # Screenshot
 some screenshots of this bot
 
@@ -63,7 +100,6 @@ some screenshots of this bot
 ![alt text](https://github.com/damartripamungkas/botdexdamar/blob/main/images/home.png?raw=true)
 
 # Instalations
-1. windows\
 - download zip
 - extract zip
 - open folder bot and open app bot file
