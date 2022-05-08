@@ -1,17 +1,26 @@
-let config = {
-    urlNodeBlockchain: "url node blockchain rpc", // node blockchain rpc support ipc/http/wss, format INPUT is TEXT.
-    encryptTextFromWallet: "result encrypt wallet", // AES encrypted text of your privatekey or wallet mnemonic, format INPUT is TEXT.
+module.exports = {
+    urlNodeBlockchain: "url node blockchain", // node blockchain rpc support ipc/http/wss  |  format INPUT is TEXT.
+    encryptTextFromWallet: "encrypted text wallet", // AES encrypted text of your privatekey or wallet mnemonic  |  format INPUT is TEXT.
     allAddress: {
-        addressPresale: "0x8B4834405051912be1998D3181A5DE46966d5b23", // address presale to your send coin, format INPUT is address.
-        addressPathSwap: ["0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "0xe9e7cea3dedca5984780bafc599bd69add087d56"], // address path swap, format INPUT is ARRAY(address).
-        storingAddressAboutBot: [] // dont change on this, scrool above to add or change data
+        /**
+         * about addressPathSwap :
+         * 
+         *  example if you want to buy XXX tokens with the WBNB token pair then follow the method below
+         *      formula = addressPathSwap: [address WBNB, address XXX]
+         *      example = addressPathSwap: ["0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", "0x12bb890508c125661e03b09ec06e404bc9289040"]
+         * 
+         *  example if you want to buy XXX tokens with a WBNB token pair but you want to use BUSD to buy it then follow the method below
+         *      formula = addressPathSwap: [address BUSD, address WBNB, address XXX]
+         *      example = addressPathSwap: ["0xe9e7cea3dedca5984780bafc599bd69add087d56", "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", "0x12bb890508c125661e03b09ec06e404bc9289040"]
+         */
+        addressPathSwap: ["0xae13d989dac2f0debff460ac112a837c89baa7cd", "0x68b44f80e2f2467f434cad4b995b8df174b665d1"], // address path swap  |  format INPUT is ARRAY(address).
     },
     transaction: {
-        gwei: "auto", // gwei your transaction, format INPUT is NUMBER, TEXT(auto, high).
-        amount: "0.00001", // amount your transaction. format INPUT is NUMBER, TEXT(auto).
-        gasLimit: "300000", // gaslimit your transaction. format INPUT is NUMBER.
-        waitTxStatus: "disable", // wait transaction status success or failed, set this to "enable" to active speedup tx on gwei high. format INPUT is TEXT(enable, disable).
-        slippage: "10", // slippage tx tolerance, set 0 for unlimited slippage, format INPUT is NUMBER.
+        gwei: "5", // gwei your transaction  |  format INPUT is NUMBER, TEXT(auto, high).
+        amount: "0.00001", // amount your transaction  |  format INPUT is NUMBER, TEXT(auto).
+        gasLimit: "300000", // gaslimit your transaction  |  format INPUT is NUMBER.
+        waitTxStatus: "disable", // wait transaction status success or failed, set this to "enable" to active speedup tx on gwei high  |  format INPUT is TEXT(enable, disable).
+        slippage: "0", // slippage tx tolerance, set 0 for unlimited slippage  |  format INPUT is NUMBER.
 
         botsniper: {
             /**
@@ -30,7 +39,7 @@ let config = {
              * - transaction/waitTxStatus
              * - botsniper/optionSwap or botsniper/optionAutoTradeSellTokenOnly or botsniper/optionPresale
              */
-            intervalCheck: "2000", // input time mileseconds for simulateTransaction, format INPUT is NUMBER.
+            intervalCheck: "2000", // input time mileseconds for simulateTransaction  |  format INPUT is NUMBER.
             optionSwap: {
                 /**
                  * set amount for swap :
@@ -38,14 +47,14 @@ let config = {
                  * - NUMBER = bot will send your tx swap with this amount.
                  */
                 buy: {
-                    targetBulk: "1", // target bulk for swap, this method using SCRIPT to send bulk transaction with different transaction (OFF-CHAIN), format INPUT is NUMBER.
-                    timeout: "disable", // delay seconds before buy token for bypass antibot on token, format INPUT is NUMBER, TEXT(disable).
+                    targetBulk: "1", // target bulk for swap, this method using SCRIPT to send bulk transaction with different transaction (OFF-CHAIN)  |  format INPUT is NUMBER.
+                    timeout: "disable", // delay seconds before buy token for bypass antibot on token  |  format INPUT is NUMBER, TEXT(disable).
                 },
                 sell: {
-                    // [autoTradeSellToken]. if you use "takeprofit" or "cutlose" you must be set "useSellToken" to enable
-                    useSellToken: "disable", // set enable and bot will sell token after buy token, format INPUT is TEXT(enable, disable).
-                    takeprofit: "2", // percentage increase in token price, format INPUT is NUMBER, TEXT(disable).
-                    cutlose: "20", // percentage decrease in token price, max 100, format INPUT is NUMBER, TEXT(disable).
+                    // [autoTradeSellToken]. if you want use "takeprofit" and "cutlose" you must be set "useSellToken" to enable
+                    useSellToken: "enable", // set enable and bot will sell token after buy token  |  format INPUT is TEXT(enable, disable).
+                    takeprofit: "10000", // percentage increase in token price  |  format INPUT is NUMBER.
+                    cutlose: "20", // percentage decrease in token price, max 100  |  format INPUT is NUMBER.
                 }
             },
             optionAutoTradeSellTokenOnly: {
@@ -56,8 +65,8 @@ let config = {
                  * - "auto" = not support.
                  * - NUMBER = bot will use that amount to set the TOKEN_0 capital benchmark and the bot will take the price of all TOKEN_1 and compare it with the set TOKEN_0 capital, if the price you get exceeds the TOKEN_0 capital then it's PROFIT and vice versa then it's LOSE.
                  */
-                takeprofit: "2", // percentage increase in token price, format INPUT is NUMBER.
-                cutlose: "10", // percentage decrease in token price, max 100, format INPUT is NUMBER.
+                takeprofit: "10000", // percentage increase in token price  |  format INPUT is NUMBER.
+                cutlose: "20", // percentage decrease in token price, max 100  |  format INPUT is NUMBER.
             },
             optionPresale: {
                 /**
@@ -65,7 +74,8 @@ let config = {
                  * - "auto" = not support.
                  * - NUMBER = bot will send your tx send coin with this amount.
                  */
-                methodId: "0xd7bb99ba", // method id must start at 0x, this function will send your transaction according to this method id. format INPUT is TEXT
+                methodId: "0xd7bb99ba", // method id must start at 0x, this function will send your transaction according to this method id  |  format INPUT is TEXT.
+                addressPresale: "0x8B4834405051912be1998D3181A5DE46966d5b23", // address presale to your send coin  |  format INPUT is address.
             }
         },
 
@@ -74,10 +84,9 @@ let config = {
              * mempool "default" only work on network. 
              * mainnet : BSC, ETH, FTM, MATIC, POLYGON, XDAI
              * testnet : ROPSTEN, RINKEBY, GOERLY, KOVAN
-             * default-05dfdc01-d98e-4f6b-b896-b24fdc2c601d
              */
-            usedMempool: "custom", // if you want to use your blockchain node url as mempool filter and send transaction set this to "custom" and if you want to use mempool filter from default of this bot and then set to "default-YOUR_KEY", format INPUT is TEXT(custom, default-xxxxxxx)
-            modeFilter: "double", // if you set this to "double" system will double filter mempool, modeFilter "double", format INPUT is TEXT(single, double).
+            usedMempool: "default-05dfdc01-d98e-4f6b-b896-b24fdc2c601d", // if you want to use your blockchain node url as mempool filter and send transaction set this to "custom-single" or "custom-multi" and if you want to use mempool filter from default of this bot and then set to "default-YOUR_KEY"  |  format INPUT is TEXT(custom, default-xxxxxxx)
+            trafficLog: "disable", // view traffic on log  |  format INPUT is TEXT(enable, disable).
             optionBackrun: {
                 /**
                  * note :
@@ -109,11 +118,11 @@ let config = {
                  * - transaction/botexploit/key
                  * - transaction/botexploit/backrun
                  */
-                mode: "normal", // the "fast" set only supports the gwei NUMBER set type and if it is activated it doesn't support running multiple bots, format INPUT is TEXT(normal, fast).
-                targetBulk: "1", // if you set "useCustomRouter" to "enable" then the bot will send bulk transaction with CUSTOM ROUTER and will do it in 1 transaction, vice versa bot will send bulk transaction with SCRIPT and will do it in different transactions, format INPUT is NUMBER
-                filterMethodId: [], // method id must start at 0x and have a length of 10, format INPUT is TEXT
-                filterAddress: ["0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3"], // filter transaction address on object "to", format INPUT is address
-                useCustomRouter: "disable", // if you want to use customRouter set this to "enable", format INPUT is TEXT(enable, disable)
+                mode: "fast", // the "fast" set only supports the gwei NUMBER set type and if it is activated it doesn't support running multiple bots  |  format INPUT is TEXT(normal, fast).
+                targetBulk: "1", // if you set "useCustomRouter" to "enable" then the bot will send bulk transaction with CUSTOM ROUTER and will do it in 1 transaction, vice versa bot will send bulk transaction with SCRIPT and will do it in different transactions  |  format INPUT is NUMBER
+                filterMethodId: ["0x2e1a7d4d"], // method id must start at 0x and have a length of 10  |  format INPUT is TEXT
+                filterAddress: ["0x0863fFa8c277a6C5C3869Ec7ead6392d3013627d"], // filter transaction address on object "to"  |  format INPUT is address
+                useCustomRouter: "disable", // if you want to use customRouter set this to "enable"  |  format INPUT is TEXT(enable, disable)
             },
             optionSandwich: {
                 /**
@@ -141,9 +150,10 @@ let config = {
                  * - transaction/botexploit/key
                  * - transaction/botexploit/sandwich
                  */
-                minimumProfitAmount: "0", // the minimum amount of profit in the number of tokens used to buy [TOKEN_0], format INPUT is NUMBER.
-                cancelTxIfDifferentblock: "disable", // [EXPERIMENTAL] cancel your buy and sell transaction if the victim's blockNumber is smaller than your first tx (buy), format INPUT is TEXT(enable, disable).
-                useCustomRouter: "enable", // must be set "enable" dont change, format INPUT is TEXT(enable, disable)
+                txfee: "0.25", // tx fee default swap dex, pancakeswap = 0.25, uniswap = 0.30  |  format INPUT is TEXT(0.25, 0.30).
+                minimumProfitAmount: "0", // the minimum amount of profit in the number of tokens used to buy [TOKEN_0]  |  format INPUT is NUMBER.
+                cancelTxIfDifferentblock: "disable", // [EXPERIMENTAL] cancel your buy and sell transaction if the victim's blockNumber is smaller than your first tx (buy)  |  format INPUT is TEXT(enable, disable).
+                useCustomRouter: "enable", // must be set "enable" dont change  |  format INPUT is TEXT(enable, disable)
             },
             optionBuyBulk: {
                 /**
@@ -170,10 +180,10 @@ let config = {
                  * - transaction/waitTxStatus
                  * - transaction/botexploit/buyBulk
                  */
-                stopIfSuccessEntered: "disable", // if this set to enable bot will automatically stop if the token has been successfully entered into the wallet. format INPUT is TEXT(enable, disable).
-                delayPerTx: "2300", // milesecond delay for each transaction, format INPUT is NUMBER, TEXT(disable).
-                targetBulk: "1", // target bulk your tx, format INPUT is NUMBER.
-                useCustomRouter: "enable", // if you want to use customRouter set this to "enable", format INPUT is TEXT(enable, disable)
+                stopIfSuccessEntered: "disable", // if this set to enable bot will automatically stop if the token has been successfully entered into the wallet  |  format INPUT is TEXT(enable, disable).
+                delayPerTx: "2300", // milesecond delay for each transaction  |  format INPUT is NUMBER, TEXT(disable).
+                targetBulk: "1", // target bulk your tx  |  format INPUT is NUMBER.
+                useCustomRouter: "enable", // if you want to use customRouter set this to "enable"  |  format INPUT is TEXT(enable, disable)
             },
         },
 
@@ -204,168 +214,3 @@ let config = {
         }
     }
 };
-
-
-let networkBasedEth = [
-    {
-        chainid: "1", // network ethereum (ETH)
-        wrappedCoin: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-        chiGasToken: "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
-        customRouter: "none",
-        dexAddress: [
-            { name: "UniswapV2", address: "0x7a250d5630b4cf539739df2c5dacb4c659f2488d" }
-        ]
-    },
-    {
-        chainid: "25", // network cronos (CRO)
-        wrappedCoin: "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-        chiGasToken: "none",
-        customRouter: "none",
-        dexAddress: [
-            { name: "CrodexV2", address: "0xeC0A7a0C2439E8Cb67b992b12ecd020Ea943c7Be" },
-            { name: "crona", address: "0xcd7d16fB918511BF7269eC4f48d61D79Fb26f918" },
-            { name: "empire", address: "0xdADaae6cDFE4FA3c35d54811087b3bC3Cd60F348" },
-            { name: "vvs", address: "0x145863Eb42Cf62847A6Ca784e6416C1682b1b2Ae" },
-            { name: "crodex", address: "0xeC0A7a0C2439E8Cb67b992b12ecd020Ea943c7Be" },
-            { name: "elk", address: "0xdB02A597b283eACb9436Cd2a2d15039a11A3299d" },
-            { name: "chrono", address: "0x5bFc95C3BbF50579bD57957cD074fa96a4d5fF9F" },
-            { name: "smol", address: "0x8118DD9fED86523Bf724e2EC5f56055Da0668AF4" },
-            { name: "swapp", address: "0x600d0b65C2A25b64C9b517A43B7a44592448d285" },
-            { name: "photon", address: "0x69004509291F4a4021fA169FafdCFc2d92aD02Aa" },
-            { name: "annex", address: "0x4B6AAD4162dd0D75aF626385f18839fF067FA6fE" },
-            { name: "kyber", address: "0xEaE47c5D99f7B31165a7f0c5f7E0D6afA25CFd55" },
-            { name: "madmeerkat", address: "0x145677FC4d9b8F19B5D56d1820c48e0443049a30" },
-            { name: "ducky", address: "0x28a10fE91d4a8D0637999a903eEf9Ad5b1D9947C" },
-            { name: "crowfi", address: "0xd30d3aC04E2325E19A2227cfE6Bc860376Ba20b1" },
-            { name: "agile", address: "0x9AadB4A3BFaCff8aa60a2c63735Cb8B94De7C57d" },
-            { name: "krypto", address: "0xDE25A2d1AD885aF4df667132f2214b920b225e52" },
-        ]
-    },
-    {
-        chainid: "56", // network binance smart chain (BNB)
-        wrappedCoin: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-        chiGasToken: "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
-        customRouter: "0x843655BD21F33ef4Fb249A82e82ADD1d14d59ECB",
-        dexAddress: [
-            { name: "PancakeSwapV2", address: "0x10ED43C718714eb63d5aA57B78B54704E256024E" },
-            { name: "bakery", address: "0xcde540d7eafe93ac5fe6233bee57e1270d3e330f" },
-            { name: "ape", address: "0xcf0febd3f17cef5b47b0cd257acf6025c5bff3b7" },
-            { name: "mdex", address: "0x7dae51bd3e3376b8c7c4900e9107f12be3af1ba8" },
-            { name: "jliquidity", address: "0xbd67d157502a23309db761c41965600c2ec788b2" },
-            { name: "baby", address: "0x325e343f1de602396e256b67efd1f61c3a6b38bd" },
-            { name: "sushi", address: "0x1b02da8cb0d097eb8d57a175b88c7d8b47997506" },
-            { name: "kyber", address: "0x78df70615ffc8066cc0887917f2Cd72092C86409" },
-            { name: "coinone", address: "0x867254aF06801C21C5812690a5c3FAd82537C6Dc" },
-            { name: "shibanova", address: "0x251912dE998ec91DFDf67EfBe032d6f4aB5EC485" },
-            { name: "empire", address: "0xdADaae6cDFE4FA3c35d54811087b3bC3Cd60F348" },
-            { name: "bi", address: "0x3a6d8cA21D1CF76F653A67577FA0D27453350dD8" },
-            { name: "wault", address: "0xD48745E39BbED146eEC15b79cBF964884F9877c2" },
-            { name: "pad", address: "0x60Ca5ed40957607D6f15688d5bc693f008210058" },
-            { name: "sheep", address: "0xc1d62747a2DdD3a2C228842ED7A469D5c1B840Ab" },
-            { name: "mochi", address: "0xa8cC4B94624B31465e777f06ee3591fd5AFe5821" },
-            { name: "jet", address: "0xBe65b8f75B9F20f4C522e0067a3887FADa714800" },
-            { name: "acy", address: "0x4DCa8E42634abdE1925ebB7f82AC29Ea00d34bA2" },
-            { name: "firebird", address: "0xF6fa9Ea1f64f1BBfA8d71f7f43fAF6D45520bfac" },
-            { name: "Fstswap", address: "0x1B6C9c20693afDE803B27F8782156c0f892ABC2d" },
-            { name: "MarsSwap", address: "0xb68825C810E67D4e444ad5B9DeB55BA56A66e72D" },
-            { name: "Safeswap", address: "0xE804f3C3E6DdA8159055428848fE6f2a91c2b9AF" },
-            { name: "Elk", address: "0xA63B831264183D755756ca9AE5190fF5183d65D6" },
-        ]
-    },
-    {
-        chainid: "97", // network binance smart chain (BNB) (TESTNET)
-        wrappedCoin: "0xae13d989dac2f0debff460ac112a837c89baa7cd",
-        chiGasToken: "0x0000000000004946c0e9F43F4Dee607b0eF1fA1c",
-        customRouter: "0x2f4853c32b895Ee80Ba87d134d9F4a116e2C7408",
-        dexAddress: [
-            { name: "PancakeSwapV2 TESTNET", address: "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3" },
-        ]
-    },
-    {
-        chainid: "137", // network polygon (MATIC)
-        wrappedCoin: "0xAcc15dC74880C9944775448304B263D191c6077F",
-        chiGasToken: "none",
-        customRouter: "none",
-        dexAddress: [
-            { name: "quick", address: "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff" },
-            { name: "sushi", address: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506" },
-            { name: "dfyn", address: "0xA102072A4C07F06EC3B4900FDC4C7B80b6c57429" },
-            { name: "ape", address: "0xC0788A3aD43d79aa53B09c2EaCc313A787d1d607" },
-            { name: "wault", address: "0x3a1D87f206D12415f5b0A33E786967680AAb4f6d" },
-            { name: "jet", address: "0x5C6EC38fb0e2609672BDf628B1fD605A523E5923" },
-            { name: "kyber", address: "0x546C79662E028B661dFB4767664d0273184E4dD1" },
-            { name: "empire", address: "0xdADaae6cDFE4FA3c35d54811087b3bC3Cd60F348" },
-            { name: "univ3poly", address: "0xE592427A0AEce92De3Edee1F18E0157C05861564" },
-            { name: "polycat", address: "0x277FEf984D1115a6f543d3D65A2d138faF1db856" },
-            { name: "gravity", address: "0x02bc4F42b998FC23355c780A756446d9998d78dE" },
-            { name: "firebird", address: "0xF6fa9Ea1f64f1BBfA8d71f7f43fAF6D45520bfac" },
-            { name: "acy", address: "0x4DCa8E42634abdE1925ebB7f82AC29Ea00d34bA2" },
-        ]
-    },
-    {
-        chainid: "250", // network fantom (FTM)
-        wrappedCoin: "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
-        chiGasToken: "none",
-        customRouter: "none",
-        dexAddress: [
-            { name: "spooky", address: "0xf491e7b69e4244ad4002bc14e878a34207e38c29" },
-            { name: "paint", address: "0xfd000ddcea75a2e23059881c3589f6425bff1abb" },
-            { name: "empire", address: "0xdADaae6cDFE4FA3c35d54811087b3bC3Cd60F348" },
-            { name: "spirit", address: "0x16327e3fbdaca3bcf7e38f5af2599d2ddc33ae52" },
-            { name: "fbomb", address: "0xD9473A05b2edf4f614593bA5D1dBd3021d8e0Ebe" },
-            { name: "sushi", address: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4" },
-            { name: "shiba", address: "0xB6f7b3d8CD9dBf30805C0dd79809dace5603Ce6A" },
-            { name: "kyber", address: "0x5d5A5a0a465129848c2549669e12cDC2f8DE039A" },
-            { name: "soul", address: "0x6b3d631B87FE27aF29efeC61d2ab8CE4d621cCBF" },
-            { name: "jet", address: "0x845E76A8691423fbc4ECb8Dd77556Cb61c09eE25" },
-            { name: "morpheus", address: "0x8aC868293D97761A1fED6d4A01E9FF17C5594Aa3" },
-            { name: "wing", address: "0x2b660040b289B1B570E053b21dd9A6F1067AD7F5" },
-            { name: "elk", address: "0x4D2cf285a519261F30b4d9c2c344Baf260d65Fa2" },
-            { name: "defy", address: "0x4a634281D3C2aF3a21469f2Ba1ad47b59dA8b752" },
-            { name: "firebird", address: "0xF6fa9Ea1f64f1BBfA8d71f7f43fAF6D45520bfac" },
-            { name: "fantomlive", address: "0xeF37DC7fdDdFa03d536C845bc19a55b2CaE76278" },
-            { name: "dexbfcba7", address: "0x5023882f4d1ec10544fcb2066abe9c1645e95aa0" },
-        ]
-    },
-    {
-        chainid: "1284", // network moonbeam (GLMR)
-        wrappedCoin: "0xAcc15dC74880C9944775448304B263D191c6077F",
-        chiGasToken: "none",
-        customRouter: "none",
-        dexAddress: [
-            { name: "BeamSwapV2", address: "0x96b244391d98b62d19ae89b1a4dccf0fc56970c7" },
-            { name: "StellaSwapV2", address: "0xd0A01ec574D1fC6652eDF79cb2F880fd47D34Ab1" }
-        ]
-    },
-    {
-        chainid: "43114", // network avalanche (AVAX)
-        wrappedCoin: "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
-        chiGasToken: "none",
-        customRouter: "none",
-        dexAddress: [
-            { name: "traderjoe", address: "0x60aE616a2155Ee3d9A68541Ba4544862310933d4" },
-            { name: "pangolin", address: "0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106" },
-            { name: "lydia", address: "0xA52aBE4676dbfd04Df42eF7755F01A3c41f28D27" },
-            { name: "hurricane", address: "0xb9a9BB6CC39387548BAA7185fbFf51d47eef8771" },
-            { name: "elk", address: "0x9E4AAbd2B3E60Ee1322E94307d0776F2c8e6CFbb" },
-            { name: "sushi", address: "0xC4729E56b831d74bBc18797e0e17A295fA77488c" },
-            { name: "yeti", address: "0x262DcFB36766C88E6A7a2953c16F8defc40c378A" },
-            { name: "party", address: "0xB2c835d90E96203Ba940462145AEB61481443605" },
-            { name: "storm", address: "0xA05728c5F9e4B30C66033C429bBdB5279e399d21" },
-            { name: "baguette", address: "0xf8C7F3f754709a7A4353fB647C3aAb6B1b0c84aD" },
-            { name: "olive", address: "0x0c45FB63001b56a21e29c7dcc1727bfDA273a368" },
-            { name: "dct", address: "0xFBA564939397e71c75c9CbB29E6E23b89e4272BE" },
-            { name: "canary", address: "0x06f8ED60393AC6A4B16900273C9313222dfe9940" },
-            { name: "empire", address: "0xd12CB7ccD5423D287A429B3528D3a1d16b7f50AF" },
-            { name: "mumu", address: "0x39ab3084353eBDd3E595A48599dDB982Cc1451ba" },
-            { name: "complus", address: "0x78c18E6BE20df11f1f41b9635F3A18B8AD82dDD1" },
-            { name: "bao", address: "0xb7453127E28EE32f97fbA7a4E990de6C92C8aC50" },
-            { name: "unify", address: "0xBd562d5cF2c62Da3143D862aF39eDb6dF59A4679" },
-            { name: "thorus", address: "0xb5b2444eDF79b00d40f463f79158D1187a0D0c25" },
-            { name: "kyber", address: "0x8Efa5A9AD6D594Cf76830267077B78cE0Bc5A5F8" },
-        ]
-    }
-];
-
-config.allAddress.storingAddressAboutBot = [...networkBasedEth];
-module.exports = config;
