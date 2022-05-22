@@ -141,5 +141,4 @@ note : if you buy it, you can only add 1 whitelist address that you will use
 ```
 email: damartripamungkas@gmail.com
 telegram: https://t.me/damartripamungkas
-facebook: https://fb.com/damartripamungkass
 ```
